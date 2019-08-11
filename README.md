@@ -12,7 +12,8 @@ To install the chart jenkins, simply follow the below steps:
 2. Clone the repo https://github.com/angautam/helm-chart-jenkins.git on your machine where helm client is running.
 
 3. Then run below command : 
-## helm install --name jenkins-releasev1 helm-chart-jenkins
+
+helm install --name jenkins-releasev1 helm-chart-jenkins
 
 
 You can watch the status of by running 'kubectl get svc --namespace default -w jenkins-releasev1'
