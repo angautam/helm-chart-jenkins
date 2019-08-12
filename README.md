@@ -17,9 +17,12 @@ Server: &version.Version{SemVer:"v2.14.3", GitCommit:"0e7f3b6637f7af8fcfddb3d294
 
 2. Clone the repo https://github.com/angautam/helm-chart-jenkins.git on your machine where helm client is running.
 
+3. Before running the helm command, you can make the persistent volume and persistence volume claim.
+please create a pvc with name "jenkins-pvc" and bind it with persistence volume.
+
 3. Then run below command : 
 
-helm install --name jenkins-releasev1 helm-chart-jenkins
+helm install --name jenkins-releasev1 ./helm-chart-jenkins
 
 
 You can watch the status of by running 'kubectl get svc --namespace default -w jenkins-releasev1'
